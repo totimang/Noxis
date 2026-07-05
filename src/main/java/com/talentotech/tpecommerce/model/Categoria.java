@@ -33,9 +33,4 @@ public class Categoria {
     @Column(name = "descripcion", length = 50)
     private String descripcion;
 
-    // Constructor personalizado (sin ID) ya que el ID lo maneja la base de datos
-    public Categoria(String nombre, String descripcion) {
-        this.nombre = nombre;
-        this.descripcion = descripcion;
-    }
 }
