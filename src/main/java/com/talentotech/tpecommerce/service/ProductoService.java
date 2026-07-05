@@ -101,7 +101,7 @@ public class ProductoService {
     }
     
     public List<Producto> buscarPorCategoria(String categoria) {
-        return repository.buscarPorCategoria(categoria);
+        return repository.findByCategoriaNombreContainingIgnoreCase(categoria);
     }
     
 }
