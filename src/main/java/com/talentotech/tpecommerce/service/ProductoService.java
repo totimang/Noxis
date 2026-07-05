@@ -45,13 +45,13 @@ public class ProductoService {
     }
 
 
-    public Producto obtenerPorId(int id) {
+    public Producto obtenerPorId(Integer id) {
         
         return repository.findById(id).orElseThrow(() -> new ProductoNoEncontradoException("No se encontró un producto con id " + id));
         
     }
 
-    public Producto actualizar(int id, Producto datos) {
+    public Producto actualizar(Integer id, Producto datos) {
         
         
         /*if (datos.getNombre() == null || datos.getNombre().isBlank()) {
@@ -85,7 +85,7 @@ public class ProductoService {
     }
 
     // DELETE: elimina un producto por id.
-    public void eliminar(int id) {
+    public void eliminar(Integer id) {
         // Verificamos que exista antes de eliminar. Si no existe,
         // obtenerPorId lanza la excepción y el método termina.
         Producto p = obtenerPorId(id);
