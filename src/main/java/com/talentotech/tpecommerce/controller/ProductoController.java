@@ -26,32 +26,6 @@ public class ProductoController {
         this.service = service;
     }    
     
-    /*
-    @GetMapping
-    public List<Producto> listarTodos() {
-        return service.listarTodos();
-    }
-    
-    
-    @GetMapping("/{id}")
-    public Producto obtenerProducto (@PathVariable int id){
-        return service.obtenerPorId(id);
-    }
-    
-    @PostMapping("")
-    public Producto crearProducto(@RequestBody Producto producto){
-        return service.guardar(producto);
-    }
-    
-    @PutMapping("{id}")
-    public Producto actualizar(@PathVariable int id, @RequestBody Producto datos) {
-        return service.actualizar(id, datos);
-    }
-    
-    @DeleteMapping("{id}")
-    public void eliminar(@PathVariable int id) {
-        service.eliminar(id);
-    }*/
     
     @GetMapping
     public ResponseEntity<List<Producto>> listarTodos(){
