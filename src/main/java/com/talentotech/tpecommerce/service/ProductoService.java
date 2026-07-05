@@ -80,6 +80,10 @@ public class ProductoService {
         p.setPrecio(datos.getPrecio());
         p.setStock(datos.getStock());
         p.setCategoria(datos.getCategoria());
+        
+        if (datos.getImagenUrl() != null) {
+            p.setImagenUrl(datos.getImagenUrl());
+        };
 
         return repository.save(p);
     }
