@@ -27,7 +27,7 @@ public class Producto {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Integer id;
     
     @NotBlank(message = "El nombre del producto no puede estar vacío!")
     @Column(name = "nombre", nullable = false, length = 100)
@@ -39,29 +39,10 @@ public class Producto {
     
     @PositiveOrZero(message = "El stock no puede ser negativo!")
     @Column(name = "stock", nullable = false)
-    private int stock;
+    private Integer stock;
     
     @ManyToOne
     @JoinColumn(name = "categoria_id")
     private Categoria categoria;
 
-    // Constructor sin id personalizado (el id lo asigna la base de datos)
-    public Producto(String nombre, double precio, int stock, Categoria categoria) {
-        this.nombre = nombre;
-        this.precio = precio;
-        this.stock = stock;
-        this.categoria = categoria;
-    }
-
-    // Mantenemos el toString personalizado por seguridad en relaciones JPA 
-    // y para conservar tu formato con el "Sin categoría"
-    @Override
-    public String toString() {
-        String nombreCat = (categoria != null) ? categoria.getNombre() : "Sin categoría";
-        return "ID: " + id +
-                " | " + nombre +
-                " | $" + precio +
-                " | Stock: " + stock +
-                " | Categoría: " + nombreCat;
-    }
 }
