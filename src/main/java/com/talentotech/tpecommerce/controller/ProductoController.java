@@ -60,11 +60,9 @@ public class ProductoController {
     
     @GetMapping("/{id}")
     public ResponseEntity<Producto> obtenerProducto (@PathVariable int id){
-        try {
+
             return ResponseEntity.ok(service.obtenerPorId(id));
-        } catch (ProductoNoEncontradoException e) {
-            return ResponseEntity.notFound().build();
-        }
+            
     }
     
     @PostMapping
@@ -75,21 +73,16 @@ public class ProductoController {
     
     @PutMapping("{id}")
     public ResponseEntity<Producto> actualizar(@PathVariable int id, @Valid @RequestBody Producto datos) {
-        try {
+
             return ResponseEntity.ok(service.actualizar(id, datos));
-        } catch (ProductoNoEncontradoException e) {
-            return ResponseEntity.notFound().build();
-        }
+
     }
     
     @DeleteMapping("{id}")
     public ResponseEntity<Void> eliminar(@PathVariable int id) {
-        try {
             service.eliminar(id);
-            return ResponseEntity.ok().build();
-        } catch (ProductoNoEncontradoException e) {
             return ResponseEntity.notFound().build();
-        }
+
     }
     
     @GetMapping("/nombre/{nombre}")
