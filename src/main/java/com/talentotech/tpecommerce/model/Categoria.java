@@ -24,7 +24,7 @@ public class Categoria {
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Integer id;
     
     @NotBlank(message = "El nombre de la categoría no puede estar vacía!")
     @Column(name = "nombre", nullable = false, length = 50)
