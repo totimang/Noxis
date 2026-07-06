@@ -45,13 +45,13 @@ public class CategoriaController {
         }
         
         @PutMapping("/{id}")
-        public ResponseEntity<Categoria> actualizar (@PathVariable int id, @Valid @RequestBody Categoria datos) {
+        public ResponseEntity<Categoria> actualizar (@PathVariable Integer id, @Valid @RequestBody Categoria datos) {
                 return ResponseEntity.ok(service.actualizar(id, datos));
         }
         
         
         @DeleteMapping("/{id}")
-        public ResponseEntity<Void> eliminar(@PathVariable int id) {
+        public ResponseEntity<Void> eliminar(@PathVariable Integer id) {
 
                 service.eliminar(id);
                 return ResponseEntity.ok().build();
