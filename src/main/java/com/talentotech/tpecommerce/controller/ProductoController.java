@@ -33,7 +33,7 @@ public class ProductoController {
     }
     
     @GetMapping("/{id}")
-    public ResponseEntity<Producto> obtenerProducto (@PathVariable int id){
+    public ResponseEntity<Producto> obtenerProducto (@PathVariable Integer id){
 
             return ResponseEntity.ok(service.obtenerPorId(id));
             
@@ -46,14 +46,14 @@ public class ProductoController {
     }
     
     @PutMapping("{id}")
-    public ResponseEntity<Producto> actualizar(@PathVariable int id, @Valid @RequestBody Producto datos) {
+    public ResponseEntity<Producto> actualizar(@PathVariable Integer id, @Valid @RequestBody Producto datos) {
 
             return ResponseEntity.ok(service.actualizar(id, datos));
 
     }
     
     @DeleteMapping("{id}")
-    public ResponseEntity<Void> eliminar(@PathVariable int id) {
+    public ResponseEntity<Void> eliminar(@PathVariable Integer id) {
             service.eliminar(id);
             return ResponseEntity.notFound().build();
 
