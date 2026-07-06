@@ -28,19 +28,19 @@ public class TpecommerceApplication {
                     Categoria procesadores = categoriaService.guardar(new Categoria(null, "Procesadores", "Procesadores Intel y AMD"));
                     
                     productoService.guardar(new Producto(null,"16GB DDR5", 378693.41, 20,
-                    "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png",
+                    "https://ibb.co/DPGY92wQ",
                     memorias));
                     
                     productoService.guardar(new Producto(null,"HD HDD 1TB", 14600, 20,
-                    "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png",
+                    "https://ibb.co/Z6GGtW9p",
                     almacenamiento));
                     
                     productoService.guardar(new Producto(null,"AMD RYZEN 7 9800X3D", 771916.97, 10,
-                    "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png",
+                    "https://ibb.co/BVqDMNgr",
                     procesadores));
                     
                     productoService.guardar(new Producto(null,"32GB DDR5", 700030.97, 10,
-                    "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png",
+                    "https://ibb.co/LdQR093z",
                     memorias));
 
                 }                
