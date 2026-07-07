@@ -27,20 +27,20 @@ public class TpecommerceApplication {
                     Categoria almacenamiento = categoriaService.guardar(new Categoria(null, "Almacenamiento", "Discos rigidos y solidos"));
                     Categoria procesadores = categoriaService.guardar(new Categoria(null, "Procesadores", "Procesadores Intel y AMD"));
                     
-                    productoService.guardar(new Producto(null,"16GB DDR5", 378693.41, 20,
-                    "https://ibb.co/DPGY92wQ",
+                    productoService.guardar(new Producto(null,"16GB DDR5", 599.999, 20,
+                    "https://mexx-img-2019.s3.amazonaws.com/Memoria-Ram-DDR5-16Gb-5600-Mhz-Kingston-Fury-Beast-Rgb_48227_2.jpeg",
                     memorias));
                     
-                    productoService.guardar(new Producto(null,"HD HDD 1TB", 14600, 20,
-                    "https://ibb.co/Z6GGtW9p",
+                    productoService.guardar(new Producto(null,"HD HDD 1TB", 179289.85, 20,
+                    "https://fullh4rd.com.ar/img/productos/12/hd-hdd-1tb-seagate-skyhawk-sata-iii-35-0.jpg",
                     almacenamiento));
                     
-                    productoService.guardar(new Producto(null,"AMD RYZEN 7 9800X3D", 771916.97, 10,
-                    "https://ibb.co/BVqDMNgr",
+                    productoService.guardar(new Producto(null,"AMD RYZEN 7 9800X3D", 835979.94, 10,
+                    "https://fullh4rd.com.ar/img/productos/1/micro-amd-ryzen-7-9800x3d-cvideo-scooler-am5-0.jpg",
                     procesadores));
                     
-                    productoService.guardar(new Producto(null,"32GB DDR5", 700030.97, 10,
-                    "https://ibb.co/LdQR093z",
+                    productoService.guardar(new Producto(null,"32GB DDR5", 1067279, 10,
+                    "https://try.com.ar/wp-content/uploads/2026/03/memoria-kingston-ddr5-32gb-6000mhz-fury-beast-rgb-1024x1024.webp",
                     memorias));
 
                 }                
