@@ -2,6 +2,7 @@ Simulación de un carrito de compras, para un emprendimiento de productos de com
 
 Se aplico lombok para agilizar lineas de codigo
 
+Se adjunta al repo el archivo sql
 
 ## Así se vería el proyecto
 <figure>
