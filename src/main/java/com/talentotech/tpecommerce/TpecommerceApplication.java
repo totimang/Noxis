@@ -49,6 +49,15 @@ public class TpecommerceApplication {
 }
 
 /* 
+Para crear la base de datos en phpmyadmins,
+pararse  en SQL:
+
+CREATE DATABASE ecommerce
+    DEFAULT CHARACTER SET = 'utf8mb4';
+*/
+
+
+/* 
 Para reiniciar los valores de mi tabla en phpmyadmins,
 pararse en la tabla 'ecommerse' y escribir en SQL 
 la primer linea y despues la segunda:
